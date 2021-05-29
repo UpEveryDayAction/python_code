@@ -54,4 +54,4 @@
 
 
 
-<p id="packageTest">packageTest</br>サブディレクトリの__init__.pyにはなにもかかない。書くと、パッケージをインストールしてもモジュールがインストールされない</p>
+<p id="packageTest"><b>packageTest</b></br>サブディレクトリの__init__.pyにはなにもかかない。書くと、パッケージをインストールしてもモジュールがインストールされない</p>
