@@ -1,6 +1,6 @@
 # python_code
 <li><a href="#packageTest">packageTest</a></li>
-<li>...</li>
+<li>argument_expand :可変長引数</li>
 <li>...</li>
 <li>...</li>
 <li>...</li>
