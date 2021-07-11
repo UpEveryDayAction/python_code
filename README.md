@@ -1,5 +1,5 @@
 # python_code
-<h1>pythonで忘れがちなところをメモしたリポジトリ</h1>
+<h3>pythonで忘れがちなコードをメモ</h3>
 <li><a href="#packageTest">packageTest</a></li>
 <li>argument_expand :可変長引数</li>
 <li>classクラスの使い方</li>
