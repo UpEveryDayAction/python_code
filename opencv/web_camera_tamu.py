@@ -15,7 +15,7 @@ import cv2
 # コンピュータにカメラが1台だけしか接続されていない場合には「0」を指定すればよい。
 # もし複数のカメラが接続されている場合は「1」などの番号を指定します。
 # 参考：https://weblabo.oscasierra.net/python/opencv-videocapture-camera.html
-cap = cv2.VideoCapture(-1)
+cap = cv2.VideoCapture(0)
 #cap = cv2.VideoCapture(0)
 
 if cap.isOpened() is False:
@@ -24,8 +24,10 @@ if cap.isOpened() is False:
 
 # 評価器を読み込み
 # https://github.com/opencv/opencv/tree/master/data/haarcascades
-cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt2.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye_tree_eyeglasses.xml')
+cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye_tree_eyeglasses.xml')
+#cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt2.xml')
+#eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye_tree_eyeglasses.xml')
 
 # モザイク処理の関数。やってることは、取得した画像を拡大した後、もとのサイズに縮小する
 # 参考：https://note.nkmk.me/python-opencv-mosaic/
@@ -59,6 +61,7 @@ while True:
     )
 
     if len(facerect) != 0:
+        
         for x, y, w, h in facerect:
             # 顔の部分(この顔の部分に対して目の検出をかける)
             face_gray = gray[y: y + h, x: x + w]
@@ -76,6 +79,7 @@ while True:
             )
 
             if len(eyes) == 0:
+                print("len_face")
                 # 目が閉じられたとみなす
                 cv2.putText(
                     frame,
