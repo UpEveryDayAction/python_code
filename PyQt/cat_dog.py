@@ -21,12 +21,23 @@ class Ui_MainWindow(object):
         self.photo.setMaximumSize(QtCore.QSize(761, 521))
         self.photo.setText("")
         self.photo.setPixmap(QtGui.QPixmap("image/cat.jpg"))
-        self.photo.setObjectName("photo")
+        self.photo.setObjectName("photo_cat")
+
+  
         self.photo_2 = QtWidgets.QLabel(self.centralwidget)
         self.photo_2.setGeometry(QtCore.QRect(0, 0, 771, 521))
         self.photo_2.setText("")
         self.photo_2.setPixmap(QtGui.QPixmap("image/dog.png"))
-        self.photo_2.setObjectName("photo_2")
+        self.photo_2.setObjectName("photo_dog")
+
+        self.photo_3 = QtWidgets.QLabel(self.centralwidget)
+        self.photo_3.setGeometry(QtCore.QRect(30, 20, 621, 521))
+        self.photo_3.setMaximumSize(QtCore.QSize(761, 521))
+        self.photo_3.setText("")
+        self.photo_3.setPixmap(QtGui.QPixmap("image/cat.jpg"))
+        self.photo_3.setObjectName("photo_cat2")
+
+
         self.cat = QtWidgets.QPushButton(self.centralwidget)
         self.cat.setGeometry(QtCore.QRect(60, 490, 261, 61))
         self.cat.setObjectName("cat")
