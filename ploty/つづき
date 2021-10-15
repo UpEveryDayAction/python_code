@@ -1,0 +1,9 @@
+つぎ調べるならここから調べる。
+https://plotly.com/python/pie-charts/
+
+numpy,pandasをもう少し調べてからでないと
+よくわからないかもしれない
+
+とくに調べたいこと
+・df <--> arry の変換
+・df <- シリーズからの変換
