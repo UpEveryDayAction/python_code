@@ -15,8 +15,13 @@ import cv2
 # コンピュータにカメラが1台だけしか接続されていない場合には「0」を指定すればよい。
 # もし複数のカメラが接続されている場合は「1」などの番号を指定します。
 # 参考：https://weblabo.oscasierra.net/python/opencv-videocapture-camera.html
+<<<<<<< Updated upstream:opencv/web_camera_tamu.py
 cap = cv2.VideoCapture(0)
 #cap = cv2.VideoCapture(0)
+=======
+# cap = cv2.VideoCapture(-1)
+cap = cv2.VideoCapture(0)
+>>>>>>> Stashed changes:opencv/web_camera.py
 
 if cap.isOpened() is False:
     print("can not open camera")
