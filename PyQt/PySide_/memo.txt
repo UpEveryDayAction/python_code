@@ -1,0 +1,2 @@
+tutorialはPySideのほうが私は読みやすかったような…。
+https://doc.qt.io/qtforpython-5/tutorials/basictutorial/widgets.html
